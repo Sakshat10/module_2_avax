@@ -1,45 +1,58 @@
-Interact with your SmartContract through Front-end Practice code
-Description
-The files index.js, MySmartContract.sol, and deploy.js contain codes to practice interaction with the SmartContract_with_Front_end_interaction smart contract through a website.
+# SmartContract_with_Frontend_Interaction
 
-NOTE:
-Deploy.js file contains the code of frontend.
+This repository contains the code for practicing the interaction with the SmartContract_with_Frontend_Interaction smart contract through a website. It includes the `index.js`, `MySmartContract.sol`, and `deploy.js` files.
 
-Environment Setting for Execution the above files
-Follow the steps below:
+## Prerequisites
 
-1-> Clone this repository or download the zip file and then extract it.
+Before running the code, make sure you have the following set up:
 
-2-> Above repository contains all necessary files to interact with our smart contract called MySmartContract.sol.
+- Node.js and npm installed on your machine (https://nodejs.org)
+- MetaMask browser extension installed (https://metamask.io)
 
-3-> Copy index.js(from this repository) contents to the index.js file in the (pages) folder
+## Setup
 
-4-> Copy deploy.js(from this repository) contents to the deploy.js file in the (scripts) folder
+1. Clone this repository or download the ZIP file and extract it.
 
-5-> Install MetaMask Browser Extension
+2. Copy the contents of `index.js` from this repository and paste them into the `index.js` file in the `pages` folder.
 
-Starter Next/Hardhat Project
-After cloning GitHub, you will want to do the following to get the code running on your computer.
+3. Copy the contents of `deploy.js` from this repository and paste them into the `deploy.js` file in the `scripts` folder.
 
-Inside the project directory, in the terminal type: npm i
-Open two additional terminals in your VS code
-In the second terminal type: npx hardhat node
-In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-(Note: You can also verify the address of deployment to contractAddress in index.js file)
-Back in the first terminal, type npm run dev to launch the front end.
-After this, the project will be running on your local host. Typically at http://localhost:3000/
+4. Install the project dependencies by running the following command in the project directory:
 
-Setting up the local host network and a dummy account in your Metamask Wallet
-->We need to set up a local network with the MetaMask wallet. otherwise, Metamask will not be able to communicate with the local node. click on the MetaMask extension then click on the top middle button which is the network selection button
+   ```shell
+   npm install
+## Running the Frontend
+ 1. Launch the frontend by running the following command in the terminal:
+       ```shell
+      npm run dev
+       ```
+    The project will be running on http://localhost:3000/.
+ 3.  Install and set up MetaMask in your browser. Create a new network in MetaMask using the following details:
 
--> Click on (Add a Network)
--> Click on (Add a Network Manually)
--> Give the (Network name - whatever you want)
--> Set the (New RPC URL - http://127.0.0.1:8545/ )
--> Set the (Chain ID - 31337 )
--> Set the (Currency symbol - ETH )
-->Now set the MetaMask wallet network to the newly created local network
--> To set up an account you have to import an account with the account's private key which you can find in the 2nd terminal where we have executed this command npx hardhat node. after hitting enter you can see there are many account numbers with private keys written in the terminal just take any account's corresponding private key to import it to your Metamask Wallet
+  Network Name: <Network Name>
+  New RPC URL: http://127.0.0.1:8545/
+  Chain ID: 31337
+  Currency Symbol: ETH
+  
+ 3.Import an account into MetaMask using the private key obtained from the terminal where you ran npx hardhat node in the previous step.
+ 4. Visit http://localhost:3000/ in your browser to access the frontend user interface.
 
--> Head to http://localhost:3000/ to start interacting with the Metamask Wallet
--> You can also see all transaction details in the deploy terminal.
+## Interacting with the Frontend
+Once the frontend is running and MetaMask is set up, you can interact with the SmartContract_with_Frontend_Interaction smart contract using the provided user interface.
+
+The frontend allows you to perform the following actions:
+
+Connect your MetaMask wallet to the website.
+View the current balance of the connected account.
+Mint new tokens.
+Transfer tokens to another address.
+Burn tokens to remove them from circulation.
+Ensure you have a sufficient ETH balance in your MetaMask account for gas fees when performing transactions.
+
+Note: You can view the transaction details in the deploy terminal where you executed the npx hardhat run --network localhost scripts/deploy.js command.
+
+Disclaimer: This repository is for educational and practice purposes only. Ensure proper security measures and testing before deploying any smart contract to a live network.
+
+
+   
+ 
