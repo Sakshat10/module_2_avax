@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.link{
+    cursor: pointer;
+    font-size: 30px;
+}
+.link:hover{
+    color: beige;
+}
+
+.balance{
+    text-align: center;
+    background-color: rgb(10, 48, 49);
+    color: rgb(29, 160, 160);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    color: aliceblue;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(54, 104, 199);
+    padding: 5px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(5, 54, 87);
+    color: white;
+}
